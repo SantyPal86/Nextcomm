@@ -9,3 +9,70 @@
     font-family: 'montserrat', 'roboto', sans-serif;
     font-size: 16px;
     }
+
+.grid__index{
+    border:
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 40px 250px repeat(3, auto) 250px;
+    grid-template-areas: 
+    "header header header"
+    "navbar__index navbar__index navbar__index"
+    "showcase showcase showcase"
+    "section__index--article section__index--article section__index--article"
+    "section__index--certif section__index--certif section__index--certif"
+    "section__index--rev section__index--rev section__index--rev"
+    "footer__index footer__index footer__index";
+    gap: 10px
+    
+}
+
+.header{ 
+    grid-area: header;
+    border: 1px solid;
+    background-image: url(../Imagenes/Logo\ Nextcomm.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 330px 100px;
+    margin: 10px 40px;
+}
+.navbar__index{
+    grid-area: navbar__index;
+    border: 1px solid;
+    background-color:  #e6e6e6;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.nav-icons{
+    width: 100px; height: 25px;
+    text-align: center; justify-content: center;
+    background-color: #e6e6e6;
+}
+.showcase{
+    grid-area: showcase;
+    border: 1px solid;
+    background-image:url(../Imagenes/Inicio.jpg);
+    background-size: 100px 100px;
+    
+}
+.section__index--article{
+    grid-area: section__index--article;
+    border: 1px solid;
+}
+.section__index--certif{
+    grid-area: section__index--cerif;
+    border: 1px solid;
+}
+.section__index--rev{
+    grid-area: section__index--rev;
+    border: 1px solid;
+}
+.footer__index{
+    grid-area: footer__index;
+    border: 1px solid;
+}
