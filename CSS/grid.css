@@ -7,70 +7,72 @@
     text-decoration: none;
     color: black;
     font-family: 'montserrat', 'roboto', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     }
 
 .grid__index{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 40px 250px repeat(3, auto) 250px;
+    grid-template-rows: 200px 40px 250px repeat(3, auto) 250px;
     grid-template-areas: 
     "header header header"
-    "navbar__index navbar__index navbar__index"
+    "navbar navbar navbar"
     "showcase showcase showcase"
-    "section__index--article section__index--article section__index--article"
-    "section__index--certif section__index--certif section__index--certif"
-    "section__index--rev section__index--rev section__index--rev"
-    "footer__index footer__index footer__index";
-    gap: 10px
+    "section1 section 1 section 1"
+    "section2 section 2 section2"
+    "review review review"
+    "footer footer footer";
+    gap: 10px 20px;
+    padding: 20px;
 }
 
 .header{ 
     grid-area: header;
-    border: 1px solid;
     background-image: url(../Imagenes/Logo\ Nextcomm.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 330px 100px;
     margin: 10px 40px;
 }
-.navbar__index{
+.navbar{
     grid-area: navbar__index;
-    border: 1px solid;
     background-color:  #e6e6e6;
+    width: 100vw; height: 40px;
+    margin-left: 0px;
 }
 .nav-list{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     gap: 20px;
     flex-wrap: wrap;
     align-content: center;
+    border: none;
 }
-.nav-icons{
+.nav-list li{
     width: 100px; height: 25px;
     text-align: center; justify-content: center;
     background-color: #e6e6e6;
+    margin: 10px;
 }
 .showcase{
     grid-area: showcase;
-    border: 1px solid;
     background-image:url(../Imagenes/Inicio.jpg);
     background-size: 100px 100px;
     
 }
-.section__index--article{
+.section1{
     grid-area: section__index--article;
     border: 1px solid;
 }
-.section__index--certif{
+.section2{
     grid-area: section__index--cerif;
     border: 1px solid;
 }
-.section__index--rev{
+.reviews{
     grid-area: section__index--rev;
     border: 1px solid;
 }
-.footer__index{
+.footer{
     grid-area: footer__index;
     border: 1px solid;
 }
