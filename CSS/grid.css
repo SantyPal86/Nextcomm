@@ -11,7 +11,6 @@
     }
 
 .grid__index{
-    border:
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 300px 40px 250px repeat(3, auto) 250px;
@@ -24,7 +23,6 @@
     "section__index--rev section__index--rev section__index--rev"
     "footer__index footer__index footer__index";
     gap: 10px
-    
 }
 
 .header{ 
