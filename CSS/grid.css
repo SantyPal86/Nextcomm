@@ -13,32 +13,31 @@
 .grid__index{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 200px 40px 250px repeat(3, auto) 250px;
-    grid-template-areas: 
-    "header header header"
+    grid-template-rows: 200px 5vh 250px auto 10vh;
+    grid-template-areas:
+    "encabezado encabezado encabezado"
     "navbar navbar navbar"
     "showcase showcase showcase"
-    "section1 section 1 section 1"
-    "section2 section 2 section2"
-    "review review review"
+    "main main main"
     "footer footer footer";
-    gap: 10px 20px;
-    padding: 20px;
+    gap: 0px 20px;
 }
 
-.header{ 
-    grid-area: header;
+.encabezado{ 
+    grid-area: encabezado;
     background-image: url(../Imagenes/Logo\ Nextcomm.jpeg);
+    width: 100vw;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 330px 100px;
-    margin: 10px 40px;
+    background-size: 350px 100px;
+    justify-content: center;
 }
 .navbar{
-    grid-area: navbar__index;
+    grid-area: navbar;
     background-color:  #e6e6e6;
-    width: 100vw; height: 40px;
+    width: 100vw;
     margin-left: 0px;
+    align-items: center;
 }
 .nav-list{
     display: flex;
@@ -50,29 +49,55 @@
 }
 .nav-list li{
     width: 100px; height: 25px;
-    text-align: center; justify-content: center;
+    text-align: center; justify-content: center; font-weight: 600; font-size: 1.2rem;
     background-color: #e6e6e6;
     margin: 10px;
+    
 }
 .showcase{
     grid-area: showcase;
+    width: 100vw;
     background-image:url(../Imagenes/Inicio.jpg);
-    background-size: 100px 100px;
-    
+    background-size: cover; background-repeat: no-repeat; background-position:center;
+    text-align: center; font-size: 4rem; text-justify: center;
 }
-.section1{
-    grid-area: section__index--article;
+.showcase h1{
+    text-align: center; color: white; font-size: 6rem;
+    margin-top: 60px;
+}
+.main__index{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: repeat(2, ifr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "articulo articulo articulo"
+    "section section section"
+    "resenas resenas resenas";
+}
+.articulo{
+    grid-area: articulo;
     border: 1px solid;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    width: 100vw; height: 30vh;
+    margin-left: 0px;
 }
 .section2{
-    grid-area: section__index--cerif;
+    grid-area: section;
     border: 1px solid;
 }
 .reviews{
-    grid-area: section__index--rev;
+    grid-area: resenas;
     border: 1px solid;
 }
 .footer{
-    grid-area: footer__index;
-    border: 1px solid;
+    grid-area: footer;
+    width: 100vw; height: 15vh; 
+    background-color: #457b9d;
+    text-align: center; font-size: 20px; font-weight: 400;
+    justify-content: center; gap: 5px;
+}
+.footer ul{
+    display: flex; flex-wrap: wrap; flex-direction: row;
+    justify-content: space-around;
 }
