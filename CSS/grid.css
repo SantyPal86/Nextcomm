@@ -21,7 +21,7 @@
     "menu menu menu"
     "showcase showcase showcase"
     "main main main"
-    "footer footer footer";
+    "pie pie pie";
     gap: 0px 20px;
 }
 h2{ text-align: center; font-size: 2rem; font-weight: 600;
@@ -124,22 +124,22 @@ margin: 20px; padding: 10px; }
 }
 .article-index p{text-align: justify; overflow: hidden;}
 .article-index span{float: right;}
------/*FOOTER*/-----
-.footer{
-    grid-area: footer;
+-----/*PIE*/-----
+.pie{
+    grid-area: pie;
     width: 100vw; height: 15vh; 
     background-color: #457b9d;
-    text-align: center; font-size: 1.4rem; font-weight: 800;
+    text-align: center; font-size: 1.4rem; font-weight: 800; text-decoration: none;
     justify-content: center; gap: 5px;
 }
-.footer ul{
+.pie ul{
     display: flex; flex-wrap: wrap; flex-direction: row;
     justify-content: space-around;
 }
-.footer ul li{
+.pie ul li{
     width:100px; height: 30px;
     margin:10px 30px;
 }
 .copyright{
-    text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px;
+    text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px; font-style: italic;
 }
