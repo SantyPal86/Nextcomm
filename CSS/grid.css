@@ -40,14 +40,14 @@
 .nav-list{
     display: flex;
     justify-content: space-around; align-content: center;
-    margin: 5px 0px;
     flex-wrap: wrap;
     
     border: none;
 }
-.nav-list ul li{
-    width: 100px; height: 25px;
-    align-content: center; justify-content: center; font-weight: 800; font-size: 1.4rem;
+.nav-list li{
+    width: 150px; height: 25px;
+    align-content: center; justify-content: center; font-weight: 800; font-size: 1.2rem;
+    text-align: center;
     background-color: #e6e6e6;
     margin: 10px;
     
