@@ -38,13 +38,14 @@ margin: 20px; padding: 10px; }
 .header_grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr) 60px;
-    grid-template-rows: auto;
+    grid-template-rows: repeat(2, 30fr);
     grid-template-areas: 
+    "logo logo language"
     "logo logo language";
 }
 .header_logo{
     grid-area: logo;
-    display:block; center; width: 500px;
+    display:block; width: 500px;
     text-align: center;
     margin: auto;
 }
@@ -52,7 +53,8 @@ margin: 20px; padding: 10px; }
     grid-area: language;
     border: 1px solid;
     width: 35px; height: 35px;
-    margin: 10px 20px; padding: 5px; gap: 40px;
+    margin: auto; padding: 5px; gap: 40px;
+    text-align: center;
     border-radius: 5px;
     background: blue;
 }
