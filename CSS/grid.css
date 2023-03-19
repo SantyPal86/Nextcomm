@@ -28,14 +28,33 @@ h2{ text-align: center; font-size: 2rem; font-weight: 600;
 margin: 20px; padding: 10px; }
 
 -----/*HEADER LOGO*/-----
-.encabezado{ 
+
+.encabezado{
     grid-area: encabezado;
-    background-image: url(../Imagenes/Logo\ Nextcomm.jpeg);
+    background-color: white;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 350px 100px;
-    justify-content: center;
+    justify-self: center;
+}
+.header_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 60px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "logo logo language";
+}
+.header_logo{
+    grid-area: logo;
+    display:block; center; width: 500px;
+    text-align: center;
+    margin: auto;
+}
+.header_language{
+    grid-area: language;
+    border: 1px solid;
+    width: 35px; height: 35px;
+    margin: 10px 20px; padding: 5px; gap: 40px;
+    border-radius: 5px;
+    background: blue;
 }
 -----/*ESTILO DE NAVBAR*/-----
 .navbar{
