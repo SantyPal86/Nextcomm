@@ -1,41 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nextcomm.com.ar</title>
     <link rel="icon" href="../Imagenes/icon.png">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/grid.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <Header>
-        <img src="../Imagenes/Logo Nextcomm.jpeg" alt="Logo Nextcomm" width="300">
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-icons"><a href="../index.html">Inicio</a></li>
-                <li class="nav-icons"><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="nav-icons"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="nav-icons"><a href="../pages/Publicaciones.html">Publicaciones</a></li>
-                <li class="nav-icons"><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </Header>
+    <div class="grid__index">
 
-    <footer>
-        <nav>
-            <ul class="footer-nav">
-                <li class="footer-icon"><a href="../index.html">Inicio</a></li>
-                <li class="footer-icon"><a href="../pages/nosotros.html">Nosotros</a></li>
-                <li class="footer-icon"><a href="../pages/servicios.html">Servicios</a></li>
-                <li class="footer-icon"><a href="../pages/Publicaciones.html">Publicaciones</a></li>
-                <li class="footer-icon"><a href="../pages/contacto.html">Contacto</a></li>
+        <Header class="encabezado">
+            <div class="header_grid">
+                <div class="header_logo">
+                    <img class="nextcomm-logo" src="../Imagenes/Logo Nextcomm.jpeg" alt="Logo Nextcomm" width="450px" height="130px">
+                </div>
+                <div class="header_language--arg">
+                    <img src="../Imagenes/bandera-argentina.png" alt="Idioma español" width="30px" height="30px">
+                </div>
+                <div class="header_language--usa">
+                    <img src="../Imagenes/bandera-usa.png" alt="Idioma inglés" width="30px" height="30px">
+                </div>
+            </div>
+        </Header>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index2.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./Publicaciones.html">Publicaciones</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <div class="copyright"><strong>Todos los derechos reservados. Copyright 2023</strong></div>
-    </footer>
+
+        <div class="showcase">
+            <img class="showcase_item--img" src="../Imagenes/header-servicios.jpeg" alt="Imagen header de nosotros" height="300px">
+            <h1 class="showcase_item--title">NOSOTROS</h1>
+        </div>
+
+        <footer class="pie">
+            <nav>
+                <ul class="footer-nav">
+                    <li class="footer-icon"><a href="../index2.html">Inicio</a></li>
+                    <li class="footer-icon"><a href="./nosotros.html">Nosotros</a></li>
+                    <li class="footer-icon"><a href="./servicios.html">Servicios</a></li>
+                    <li class="footer-icon"><a href="./Publicaciones.html">Publicaciones</a></li>
+                    <li class="footer-icon"><a href="./contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="copyright"><strong>Todos los derechos reservados. Copyright 2023</strong></div>
+        </footer>
 </body>
 </html>
