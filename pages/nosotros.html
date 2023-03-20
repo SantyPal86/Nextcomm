@@ -13,61 +13,51 @@
 </head>
 <body>
     <div class="grid__index">
+
         <Header class="encabezado">
             <div class="header_grid">
-            <div class="header_logo">
-                <img class="nextcomm-logo" src="../Imagenes/Logo Nextcomm.jpeg" alt="Logo Nextcomm" width="450px" height="130px">
+                <div class="header_logo">
+                    <img class="nextcomm-logo" src="../Imagenes/Logo Nextcomm.jpeg" alt="Logo Nextcomm" width="450px" height="130px">
+                </div>
+
+                <div class="header_language--arg">
+                    <img src="../Imagenes/bandera-argentina.png" alt="Idioma español" width="30px" height="30px">
+                </div>
+                <div class="header_language--usa">
+                    <img src="../Imagenes/bandera-usa.png" alt="Idioma inglés" width="30px" height="30px">
+                </div>
             </div>
-            <div class="header_language">
-                <img src="../Imagenes/bandera-argentina.png" alt="Idioma español" width="30px" height="30px">
-            </div>
-            <div class="header_language">
-                <img src="../Imagenes/bandera-usa.png" alt="Idioma inglés" width="30px" height="30px">
-            </div>
-        </div>
         </Header>
-        <nav class="navbar  navbar-expand-lg bg-body-tertiary style=" style="background-color: #e6e6e6" class="menu">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="./Imagenes/icon.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index2.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/Publicaciones.html">Publicaciones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-                </ul>
-            </div>
-            </div>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="../index2.html">Inicio</a></li>
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/Publicaciones.html">Publicaciones</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
         </nav>
 
-<div class=".img-cabecera">
-    <img src="../Imagenes/header-nosotros.jpeg" alt="Foto de trabajo en equipo" width="100%" height="250px">
-</div>
-<h1>NOSOTROS</h1>
-<section class="section-index">
+        <div class="showcase">
+            <img class="showcase_item--img" src="../Imagenes/header-nosotros.jpeg" alt="Imagen header de nosotros" height="300px">
+            <h1 class="showcase_item--title">NOSOTROS</h1>
+        </div>
+
+<main class="main">
+<section class="section-index" class="articulo">
     <div class="notas-generales">
         <h2>¿Quienes somos?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptate accusamus voluptates perferendis dicta quod eveniet dignissimos est ipsum enim aliquid eum officiis suscipit incidunt, velit quibusdam sequi dolorum temporibus necessitatibus, asperiores doloremque. Ea accusamus quo ipsum, eligendi nam veritatis cupiditate cum labore perspiciatis laborum tenetur, repellat, doloribus vel dolorem!</p>
     </div>
     <div class="img-ilustration">
-    <img src="../Imagenes/corp-nosotros.jpeg" alt="Foto de nosotros" width="400px" height="300px">
+        <img src="../Imagenes/corp-nosotros.jpeg" alt="Foto de nosotros" width="400px" height="300px">
     </div>
 </section>
+
 <hr>
-<section class="section-index">
+
+<section class="section-index" class="section">
 <div class="notas-generales">
     <h2>Nuestros clientes</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptate accusamus voluptates perferendis dicta quod eveniet dignissimos est ipsum enim aliquid eum officiis suscipit incidunt, velit quibusdam sequi dolorum temporibus necessitatibus, asperiores doloremque. Ea accusamus quo ipsum, eligendi nam veritatis cupiditate cum labore perspiciatis laborum tenetur, repellat, doloribus vel dolorem!</p>
@@ -76,7 +66,9 @@
     <img src="../Imagenes/clientes-nosotros.jpeg" alt="nuestros clientes" width="400px" height="300px">
 </div>
 </section>
-    <footer>
+
+</main>
+    <footer class="pie">
         <nav>
             <ul class="footer-nav">
                 <li class="footer-icon"><a href="../index.html">Inicio</a></li>

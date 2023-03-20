@@ -6,7 +6,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'montserrat', 'roboto', sans-serif;
-    font-size: 1em;
+    font-size: 1em; color: black;
     }
 
     /* ---!ARMADO DE SECCIONES GENERALES DEL SITE !--- (HEADER-FOOTER Y ESTILOS)*/
@@ -22,43 +22,37 @@
     "showcase showcase showcase"
     "main main main"
     "pie pie pie";
-    gap: 0px 20px;
-}
+    gap: 0px 20px;}
+
 h2{ text-align: center; font-size: 2rem; font-weight: 600;
 margin: 20px; padding: 10px; }
 
 -----/*HEADER LOGO*/-----
-
 .encabezado{
-    grid-area: encabezado;
-    background-color: white;
-    width: 100vw;
-    justify-self: center;
-}
+    grid-area: encabezado; background-color: white; width: 100vw; justify-self: center;}
 .header_grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr) 60px;
     grid-template-rows: repeat(2, 30fr);
     grid-template-areas: 
-    "logo logo language"
-    "logo logo language";
-}
+    "logo logo language1"
+    "logo logo language2";}
 .header_logo{
     grid-area: logo;
     display:block; width: 500px;
     text-align: center;
-    margin: auto;
-}
-.header_language{
-    grid-area: language;
-    border: 1px solid;
-    width: 35px; height: 35px;
-    margin: auto; padding: 5px; gap: 40px;
-    text-align: center;
-    border-radius: 5px;
-    background: blue;
-}
+    margin: auto;}
+.header_language--arg{
+    grid-area: language1;
+    width: 40px; height: 40px;
+    margin: auto; padding: 5px; gap: 40px;}
+.header_language--usa{
+    grid-area: language2;
+    width: 40px; height: 40px;
+    margin: auto; padding: 5px; gap: 40px;}
 -----/*ESTILO DE NAVBAR*/-----
+nav{grid-area: menu;}  /*NO ENTIENDO, EL .NAVBAR NO SE ACTIVA POR SI MISMO; PERO SI LO HACE, CUANDO CREO EL SELECTOR NAV.
+SI LO BORRO DEJA DE APLICARSE*/
 .navbar{
     grid-area: menu;
     background-color: #e6e6e6;
@@ -66,15 +60,11 @@ margin: 20px; padding: 10px; }
     justify-content: space-around;
 }
 .nav-list{
-    display: flex;
-    justify-content: space-around; align-content: center;
-    flex-wrap: wrap;
-    margin: 20px; padding-left: 0px;
-    border: none;
+    display: flex; flex-wrap: wrap; flex-direction: row; justify-content: space-around;
 }
 .nav-list li{
     width: 150px; height: 25px;
-    align-content: center; justify-content: center; font-weight: 800; font-size: 1.2rem;
+    justify-content: center; font-weight: 800; font-size: 1.2rem;
     text-align: center;
     background-color: #e6e6e6;
     margin: 10px;
@@ -83,15 +73,11 @@ margin: 20px; padding: 10px; }
 -----/*ESTILO DE IMAGEN ENCABEZADO*/-----
 .showcase{
     grid-area: showcase;
-    width: 100vw;
-    background-image:url(../Imagenes/Inicio.jpg);
-    background-size: cover; background-repeat: no-repeat; background-position:center;
-    text-align: center; font-size: 4rem; text-justify: center;
-}
-.showcase h1{
-    text-align: center; color: white; font-size: 6rem;
-    margin-top: 60px;
-}
+    width: 100vw; height: 300px; margin-bottom: 20px;
+    display: flex; flex-direction: row; flex-wrap: wrap;}
+.showcase_item--img{ width:100vw; object-fit: fill; object-position: center; position: absolute; z-index: -1;}
+.showcase_item--title{margin-top: 70px; margin-left: 400px; align-content: center; color: white; font-size: 6rem; position: absolute; z-index: 1;}
+
 -----/*ESTILO DE ZONA DE NOTAS Y CONTENIDO*/-----
 .main{
     grid-area: main;
@@ -148,18 +134,19 @@ margin: 20px; padding: 10px; }
 -----/*PIE*/-----
 .pie{
     grid-area: pie;
-    width: 100vw; height: 15vh; 
+    width: 100vw;
     background-color: #457b9d;
     text-align: center; font-size: 1.4rem; font-weight: 800; text-decoration: none;
     justify-content: center; gap: 5px;
 }
 .pie ul{
     display: flex; flex-wrap: wrap; flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; background-color: #457b9d;
 }
-.pie ul li{
-    width:100px; height: 30px;
-    margin:10px 30px;
+.pie li{
+    width:150px; height: 30px;
+    margin:10px 30px; padding: 5px; 
+    text-align: center; color: black; font-size: 1.2rem;
 }
 .copyright{
     text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px; font-style: italic;
