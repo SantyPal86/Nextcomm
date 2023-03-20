@@ -151,7 +151,7 @@ SI LO BORRO DEJA DE APLICARSE*/
     text-align: center; font-size: 1.2rem;
 }
 .copyright{
-    text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px; font-style: italic;}
+    text-align: center; font-weight: 600; font-size: 1.2rem; font-style: italic; background-color: #457b9d;}
 
 -----/*PAGINA NOSOTROS*/-----
 .main_us{
@@ -161,7 +161,7 @@ SI LO BORRO DEJA DE APLICARSE*/
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "articulo articulo articulo"
-    "section section section"
+    "section section section";
 }
 .notas_generales--us{
     width: 50vw; height: 300px; margin: 10px 30px; padding: 0px 20px;
@@ -176,4 +176,38 @@ SI LO BORRO DEJA DE APLICARSE*/
 .section_us{
     grid-area: section;
     display: flex; flex-direction: row; flex-wrap: wrap;
+}
+
+-----/*PAGINA PUBLICACIONES*/------ 
+.grid_publi--gallery{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 200px repeat(2, 1fr);
+    grid-template-rows: 40px repeat(2, 1fr);
+    padding: 10px;
+    gap: 5px 10px;
+    grid-template-areas:
+    "intro intro intro" 
+    "article section section"
+    "article section section";}
+
+.grid_publi--intro{
+    grid-area: intro; text-align: center; text-justify: center;}
+.grid_publi--article{
+    grid-area: article; text-justify:auto;}
+.grid_publi--section{
+    grid-area: section; gap: 10px; padding-left: 10px;}
+.article-icon{border-radius: 10px; gap: 10px;}
+
+
+@media (max-width: 768px) {
+    .grid__index{
+        
+        grid-template-areas:
+        "encabezado"
+        "menu"
+        "showcase"
+        "main"
+        "pie";
+        gap: 0px 20px;}
 }
