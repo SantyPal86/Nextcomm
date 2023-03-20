@@ -73,22 +73,23 @@ SI LO BORRO DEJA DE APLICARSE*/
 -----/*ESTILO DE IMAGEN ENCABEZADO*/-----
 .showcase{
     grid-area: showcase;
-    width: 100vw; height: 300px; margin-bottom: 20px;
-    display: flex; flex-direction: row; flex-wrap: wrap;}
+    width: 100vw; height: 30vh; margin-bottom: 20px;
+    display: flex; flex-direction: row; flex-wrap: wrap; position: relative;}
 .showcase_item--img{ width:100vw; object-fit: fill; object-position: center; position: absolute; z-index: -1;}
-.showcase_item--title{margin-top: 70px; margin-left: 400px; align-content: center; color: white; font-size: 6rem; position: absolute; z-index: 1;}
+.showcase_item--title{align-content: center; color: white; font-size: 6rem; position: absolute; z-index: 1; top: 40%; left: 50%; transform: translate(-50%, -50%);}
 
 -----/*ESTILO DE ZONA DE NOTAS Y CONTENIDO*/-----
 .main{
     grid-area: main;
     display:grid;
+    width: 100vw; height: auto;
+
     grid-template-columns: repeat(2, ifr);
     grid-template-rows: auto repeat(2, 1fr);
     grid-template-areas: 
     "articulo articulo articulo"
     "section section section"
-    "resenas resenas resenas";
-}
+    "resenas resenas resenas";}
 
 .articulo{
     grid-area: articulo;
@@ -99,9 +100,10 @@ SI LO BORRO DEJA DE APLICARSE*/
 .img-ilustration{
     width: 400px; height: 250px; margin: 20px 40px;
     border-radius: 20px; overflow: hidden;
+    align-items: center;
 }
 .notas-generales{
-    width: 50vw; height: 300px; margin: 20px 30px; padding: 20px; box-sizing: border-box;
+    width: 50vw; height: 300px; margin: 20px 30px; padding: 20px;
     text-align: justify; font-size: 1.2rem;
 }
 
@@ -146,8 +148,32 @@ SI LO BORRO DEJA DE APLICARSE*/
 .pie li{
     width:150px; height: 30px;
     margin:10px 30px; padding: 5px; 
-    text-align: center; color: black; font-size: 1.2rem;
+    text-align: center; font-size: 1.2rem;
 }
 .copyright{
-    text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px; font-style: italic;
+    text-align: center; font-weight: 600; font-size: 1.2rem; margin-top: 20px; font-style: italic;}
+
+-----/*PAGINA NOSOTROS*/-----
+.main_us{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "articulo articulo articulo"
+    "section section section"
+}
+.notas_generales--us{
+    width: 50vw; height: 300px; margin: 10px 30px; padding: 0px 20px;
+    text-align: justify; font-size: 1.2rem;
+}
+
+.articulo_us{
+    grid-area: articulo;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+}
+
+.section_us{
+    grid-area: section;
+    display: flex; flex-direction: row; flex-wrap: wrap;
 }
