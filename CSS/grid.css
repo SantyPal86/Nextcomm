@@ -76,14 +76,13 @@ SI LO BORRO DEJA DE APLICARSE*/
     width: 100vw; height: 30vh; margin-bottom: 20px;
     display: flex; flex-direction: row; flex-wrap: wrap; position: relative;}
 .showcase_item--img{ width:100vw; object-fit: fill; object-position: center; position: absolute; z-index: -1;}
-.showcase_item--title{align-content: center; color: white; font-size: 6rem; position: absolute; z-index: 1; top: 40%; left: 50%; transform: translate(-50%, -50%);}
+.showcase_item--title{align-content: center; color: white; font-size: 6em; position: absolute; z-index: 1; top: 40%; left: 50%; transform: translate(-50%, -50%);}
 
 -----/*ESTILO DE ZONA DE NOTAS Y CONTENIDO*/-----
 .main{
     grid-area: main;
     display:grid;
     width: 100vw; height: auto;
-
     grid-template-columns: repeat(2, ifr);
     grid-template-rows: auto repeat(2, 1fr);
     grid-template-areas: 
@@ -202,12 +201,27 @@ SI LO BORRO DEJA DE APLICARSE*/
 
 @media (max-width: 768px) {
     .grid__index{
-        
         grid-template-areas:
-        "encabezado"
-        "menu"
-        "showcase"
-        "main"
-        "pie";
-        gap: 0px 20px;}
+        "encabezado encabezado encabezado"
+        "menu menu menu"
+        "showcase showcase showcase"
+        "main maain main"
+        "pie pie pie";}
+        .articulo{flex-direction: column; flex-wrap: wrap;}
+        .div-resenas{flex-direction: column; flex-wrap: wrap;}
+        .article-index{width: 90vw; height: auto; margin-left: 10px;}
+        .pie ul{flex-direction: column; justify-items: left;}
+        .pie li{text-align: left;}
+        /*PAGINA NOSOTROS RESPONSIVE*/
+        .grid__index{
+            grid-template-areas:
+            "encabezado encabezado encabezado"
+            "menu menu menu"
+            "showcase showcase showcase"
+            "main main main"
+            "pie pie pie";}
+        .articulo_us{flex-direction: column; align-content: center;}
+        .notas_generales--us{width: 90vw; height: auto;}
+        .showcase_item--title{font-size: 5em;}
+        .copyright{font-size: 1em;}
 }
